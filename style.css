@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+  --c1: #dac6c6;
+  --c2: #575757;
+  --c3: #bf77c9;
+}
+
+body {
+  background-color: antiquewhite;
+  color: rgb(0, 0, 0);
+  line-height: 1.7;
+}
+
+header {
+  background-color: #dac6c6;
+  padding: 20px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 1px 3px #575757;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: white;
+}
+
+.hero {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=1470&auto=format&fit=crop")
+      no-repeat center center/cover;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 25px;
+  max-width: 600px;
+}
+
+.botao {
+  background-color: var(--c1);
+  color: #000000;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition:
+    transform 0.3s,
+    background-color 0.3s;
+}
+
+.botao:hover {
+  background-color: var(--c3);
+  transform: scale(1.05);
+}
