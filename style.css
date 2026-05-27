@@ -36,6 +36,7 @@ header {
 }
 
 nav a {
+  font-size: 1rem;
   text-decoration: none;
   color: #333;
   margin-left: 20px;
@@ -82,6 +83,15 @@ nav a:hover {
     font-size: 2.8rem;
     line-height: 1;
   }
+
+  nav a {
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: #333;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
 }
 
 .hero h1 {
